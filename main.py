@@ -1,25 +1,9 @@
-from random import randint
+from commands import *
 
-
-def check_name(name):
-    if name.isalpha():
-        print("Hello {0}!".format(name.capitalize()))
-        return name.capitalize()
-
-    print("Incorrect name - note, that provided name can only contains letters with no numbers or special characters.")
-    return False
-
-
+# Checking user's name from input
 user_name = check_name(input("What's your name?\n"))
 while not user_name:
     user_name = check_name(input("Try again, please.\n"))
 
-
-def draw_number():
-    number = randint(1, 100)
-    print("Today, your lucky number is {0}!".format(number))
-    return number
-
-
+# Drawing a lucky number for the user
 user_number = draw_number()
-
