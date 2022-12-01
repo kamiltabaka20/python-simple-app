@@ -1,4 +1,6 @@
-from commands import *
+from number_drawing import draw_number
+from name_checker import check_name
+
 
 # Checking user's name from input
 user_name = check_name(input("What's your name?\n"))
