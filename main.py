@@ -1,5 +1,6 @@
 from number_drawing import draw_number
 from name_checker import check_name
+from file_creator import write_to_a_file
 
 
 # Checking user's name from input
@@ -9,3 +10,6 @@ while not user_name:
 
 # Drawing a lucky number for the user
 user_number = draw_number()
+
+# Sending taken data to a .txt file
+write_to_a_file(user_name + ' ' + str(user_number))
